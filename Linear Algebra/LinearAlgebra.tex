@@ -1,0 +1,176 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{pgfplots} 
+
+%opening
+\title{Linear Algebra Review}
+\author{Steven Koniaev}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+
+\fancyhf{}
+\rhead{
+	Steven K \\
+	Prof: Me \\
+	Math 133
+}
+\rfoot{Page \thepage}
+
+
+\begin{document}
+	\begin{center}
+		Linear Algebra Notes
+	\end{center}
+	
+	\section*{Study Sheets}
+	
+	\begin{flushleft}
+		\textbf{Part One:} \\
+		\begin{itemize}
+			\item \textbf{Linear Equation: } \\ Equation in the form $a_1x_1+a_2x_2 + \ldots a_nx_n = b$
+			\item \textbf{Solution: } \\ Parallel lines - No Solution - Inconsistent 
+			\\ Same line - Infinite Solutions - Consistent \\ Intersection - One Solution - Consistent \\ This concept extends to 3D plans or even higher dimensions \\Number of variables = dimension of space
+		\item \textbf{Matrix Notation: }
+				$$ 7x + 5y - 3z = 16$$
+				$$3x-5y + 2z = -8 $$
+				$$5x + 3y - 7z = 0 $$
+				
+				\begin{center}
+					Coefficient matrix
+				$$\begin{bmatrix}
+					7 & 5 & -3 \\
+					3 & -5 & 2 \\
+					5 & 3 & -7 \\
+				\end{bmatrix}$$
+			
+			
+				
+					Augmented matrix
+				$$\begin{bmatrix}
+					7 & 5 & -3  & 16\\
+					3 & -5 & 2 & -8\\
+					5 & 3 & -7 & 0\\
+				\end{bmatrix}$$
+			m equations and n variables leads to a m x n matrix.
+			
+		\end{center}
+	
+			\item \textbf{Elementary Row Operations}\\
+			\begin{itemize}
+				\item[-]Row Swap) Exchange any two rows.
+				\item[-](Scalar Multiplication) Multiply any row by a constant.
+				\item[-](Row Sum) Add a multiple of one row to another row
+			\end{itemize}
+		
+		\newpage
+			\item \textbf{Reduced Row-Echelon Form}\\
+			Example:
+			
+			$$\begin{bmatrix}
+				1 & 0 & 0  & a\\
+				0 & 1 & 0 & b\\
+				0 & 0 & 1 & c\\
+			\end{bmatrix}$$
+			
+			\begin{itemize}
+				\item[-] Any row with non-zero entries has a leading one
+				\item[-] All entries in a column with a leading one are zero
+				\item[-] Each leading one has another up and to the left
+			\end{itemize}
+		Elimination is complete and we can look at the Rank of the matrix
+	
+	\begin{center}
+		\framebox[1.1\width] {Rank = number of leading ones} \par 
+	\end{center}
+
+\begin{itemize}
+	\item[-] Rank = Number of columns in coefficient matrix $\rightarrow$ at most one solution
+	\item[-] Rank $<$ Number of columns in coefficient matrix $\rightarrow$ Infinite or No solutions
+\end{itemize}
+		
+		
+\item \textbf{Types of Matrices}
+\begin{center}
+	 m = number of rows\\
+	 n = number of columns \\
+	 
+	 m = n results in a square matrix\\
+\end{center}			
+\begin{flushleft}
+	The identity matrix I is an RREF square matrix with any size. \\
+	Example:\\ 
+	$$ I =
+	\begin{bmatrix}
+		1 & 0 & 0 & 0 \\ 
+		0 & 1 & 0 & 0 \\
+		0 & 0 & 1 & 0 \\
+		0 & 0 & 0 & 1
+	\end{bmatrix}
+	$$
+	\begin{itemize}
+		\item[-] An upper triangular matrix is one where all entries below the diagonal are 0.
+		\item[-] A lower triangular matrix one where all entries above the diagonal are 0.
+		\item[-]  \textbf{Vector: }Matrix of one column
+		\item[-]  \textbf{Row Vector: }Matrix of one row
+	\end{itemize}
+Linear equations can also be represented as vectors.
+$$ 3x+y = 7$$
+$$x+2y = 4 $$
+$$ x \begin{bmatrix}3\\1\\ \end{bmatrix}
+	+ y\begin{bmatrix}1\\2\\ \end{bmatrix} 
+	= \begin{bmatrix}
+		7 \\ 4 
+	\end{bmatrix}$$
+	
+	This is the vector form of the linear system.
+	This shows that scalars can be factored in and out of Matrices.
+	
+	\begin{itemize}
+		\item[-] \textbf{Matrix Addition}\\
+		Two Matrices must have the same dimension in order to add them.\\
+		Example:
+		
+		$$\begin{bmatrix}
+			1 & 2  & 3 \\
+			4 & 5 & 6 \\
+		\end{bmatrix}
+	+  \begin{bmatrix}
+		7 & 3  & 1 \\
+		5 & 3 & -1\\
+	\end{bmatrix}
+= \begin{bmatrix}
+	8 & 5  & 4 \\
+	9 & 8 & 5 \\
+\end{bmatrix} $$
+Reminder that this is a 2 x 3 matrix and is the sum of the first two.\\
+\item[-] \textbf{Matrix Subtraction} \\ Works in the exact same way as addition. \\
+
+\textit{Note* \\Addition is commutative- Subtraction is not}\\
+
+\item[-] \textbf{Matrix Multiplication}\\
+In order for two matrices (n x m and q x p) to be multiplied. \\
+m = q MUST be true. \\
+
+
+
+	\end{itemize}
+\end{flushleft}
+		
+		
+		
+		\end{itemize}
+	\end{flushleft}
+	
+	
+	\paragraph{1.1}
+	\textit{
+		\textbf{A}	Find this this this and that!
+	}
+\end{document}

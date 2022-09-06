@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{pgfplots} 
+
+%opening
+\title{Probability Notes}
+\author{Steven Koniaev}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+
+\fancyhf{}
+\rhead{
+	Steven K \\
+	Prof: Nadarajah \\
+	Math 323
+}
+\rfoot{Page \thepage}
+
+
+\begin{document}
+	\begin{center}
+		Probability Notes
+	\end{center}
+	
+	\section*{Study Sheets}
+	
+	\begin{flushleft}
+		\textbf{Axioms}
+		\begin{itemize}
+			\item For any event A, P(A) $\geq$ 0
+			\item P(S) = 1
+			\item If $A_1, A_2, A_3, \ldots$ is an infinite collection of disjoint events, then 
+			$$P(A_1 \cup A_2 \cup A_3 \cup \ldots) = \sum_{i=1}^{\infty} P(A_i)$$
+		\end{itemize}
+	\end{flushleft}
+	
+	
+	\begin{flushleft}
+		\textbf{Definitions:} \\
+		\begin{itemize}
+			\item \textbf{Experiment:} Process of observation that leads to a single outcome that cannot be predicted with certainty.
+			\item \textbf{Sample Point:} Most basic outcome of an experiment
+			\item \textbf{Sample Space ($S$):} Collection of all sample points, contains all outcomes
+			\item \textbf{Event:} A certain collection of sample points
+			\item \textbf{Simple Events:} One sample point
+			\item \textbf{Compound Events:} Two ore more sample points
+			\item \textbf{The Null Event ($\phi$)} The event that contains no outcomes  $\{\}$ \\	
+			\item \textbf{Union:} \\ 
+			$A \cup B = \{e \mid e \in A \textbf{ or } e \in B\}$
+			\item \textbf{Intersection:} \\ 
+			$A \cap B =  \{e \mid e \in A \textbf{ and } e \in B\}$
+			\item \textbf{Complement:} \\ 
+			$A' =  \{e \mid e \notin A\}$ \\
+			\item \textbf{Mutually Exclusive / Disjoint Events:} \\
+			$ A \cap B = \phi $
+			\item \textbf{De Morgan's Laws} \\
+			$  (A \cup B)' = A' \cap B' $ \\
+			$ (A \cap B)' = A' \cup B'$
+		\end{itemize}
+	\end{flushleft}
+
+	\begin{flushleft}
+		\textbf{Concepts:} \\
+		\begin{itemize}
+			\item Empirical and Theoretical Probability 
+			\item S always occurs $\phi$ never occurs
+			\item \textbf{Complement Rule} \\
+			$S = A \cup A' \linebreak
+			P(A') = 1 - P(A) \linebreak
+			P(S) = P(A) + P(A')$
+			\item \textbf{Addition Rule} \\
+			For any events A and B, \\
+			$P(A \cup B) = P(A) + P(B) - P(A \cap B) $ \\
+			\textbf {Proof:} \\
+			$ P(A \cup B) = P(A) + P(B \cap A') 
+			\linebreak = P(A) + [P(B) - P(A \cap B)] 
+			\linebreak = P(A) + P(B) - P(A \cap B) $
+			
+			\item \textbf{N Rule} \\
+			Suppose we have sets $A_1, A_2, A_3, \ldots$ and that any pair are mutually exclusive.  \\
+			Let $n_i$ be the number of elements in $A_i$. 
+			Then let N be the total number of elements.
+			If $n_1$ is the total number of ways the first operation can be preformed then $n_2$ is number of ways the second operation can be preformed. $$ N = n_1 n_2$$ Is the total amount of ways the two operations can be preformed. \\ $\linebreak$
+			\textbf{How many ways can you order N objects?} \\
+			First object $n_1 = n$ \\
+			Second object $n_2 = n-1$\\
+			kth object $n_k = n - k + 1 $\\
+			$ \linebreak N = n(n-1)...(n-k+1) = n!$
+		\end{itemize}
+	\end{flushleft}
+	
+	\paragraph{1.1}
+	\textit{
+		\textbf{A}	Find this this this and that!
+}
+\end{document}
